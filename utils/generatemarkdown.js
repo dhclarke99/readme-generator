@@ -1,6 +1,19 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+    const MIT = "![MIT]'https://img.shields.io/bower/l/bootstrap?style=for-the-badge'"
+    const apacheLicense = "![Apache]'https://img.shields.io/bower/l/bootstrap?style=for-the-badge'"
+    const unLicnese = "![unlicense]'https://img.shields.io/bower/l/bootstrap?style=for-the-badge'"
+    if (license === "MIT") {
+        console.log(MIT)
+    } else if (license === "Apache License 2.0") {
+        return apacheLicense
+    } else if (license === "The Unlicense") {
+        return unLicnese
+    } else {
+        return "";
+    }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
