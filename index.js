@@ -1,39 +1,57 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+
 // TODO: Create an array of questions for user input
 const questions = () => { 
     return inquirer.prompt([
         {
             type: 'input',
-            name: 'name',
-            message: 'What is your name?',
+            name: 'title',
+            message: 'What is your project title?',
           },
           {
             type: 'input',
-            name: 'location',
-            message: 'Where are you from?',
+            name: 'description',
+            message: 'Write a short description',
           },
           {
             type: 'input',
-            name: 'hobby',
-            message: 'What is your favorite hobby?',
+            name: 'installation',
+            message: 'Write instructions for installation',
           },
           {
             type: 'input',
-            name: 'food',
-            message: 'What is your favorite food?',
+            name: 'usageInfo',
+            message: 'Write usage information',
           },
           {
             type: 'input',
-            name: 'github',
-            message: 'Enter your GitHub Username',
+            name: 'contribution',
+            message: 'Write Contribution Guidelines',
           },
           {
             type: 'input',
-            name: 'linkedin',
-            message: 'Enter your LinkedIn URL.',
+            name: 'testing',
+            message: 'Write test instructions',
           },
+          {
+            type: 'list',
+            name: 'license',
+            message: 'Choose a license',
+            choices: ["1", "2", "3"]
+          },
+          {
+            type: 'input',
+            name: 'gitHub',
+            message: 'Enter your GitHub user name',
+          },
+          {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your email address',
+          },
+
 
     ]);
 };
