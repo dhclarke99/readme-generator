@@ -5,7 +5,6 @@ function renderLicenseBadge(license) {
     const apacheLicense = "![Apache](https://img.shields.io/aur/license/android-studio?color=green&style=plastic)"
     const GPL = "![unlicense](https://img.shields.io/eclipse-marketplace/l/notepad4e)"
     if (license === "MIT") {
-        console.log(MIT)
         return MIT
     } else if (license === "Apache License 2.0") {
         return apacheLicense
