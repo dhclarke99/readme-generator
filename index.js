@@ -43,7 +43,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Choose a license',
-            choices: ["MIT", "Apache License 2.0", "The Unlicense"]
+            choices: ["MIT", "Apache License 2.0", "GPL"]
           },
           {
             type: 'input',
@@ -61,7 +61,9 @@ const questions = () => {
 // TODO: Create a function to write README file
      .then((data) => {
         const license = data.license
-        savedFunctions.renderLicenseBadge(license)
+        // savedFunctions.renderLicenseBadge(license)
+        // savedFunctions.renderLicenseLink(license)
+        savedFunctions.renderLicenseSection(license)
        const readmeContent = savedFunctions.generateMarkdown(data);
        fs.writeFile("readme.md", readmeContent, (err) =>
        err ? console.log(err) : console.log("success!")
