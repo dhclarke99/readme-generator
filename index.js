@@ -61,8 +61,9 @@ const questions = () => {
 // TODO: Create a function to write README file
      .then((data) => {
         const license = data.license
-        // savedFunctions.renderLicenseBadge(license)
-        // savedFunctions.renderLicenseLink(license)
+        const gitProf = data.gitHub
+
+        
         savedFunctions.renderLicenseSection(license)
        const readmeContent = savedFunctions.generateMarkdown(data);
        fs.writeFile("readme.md", readmeContent, (err) =>

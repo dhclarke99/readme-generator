@@ -1,10 +1,9 @@
-# pe
+# s
 
   ## Description
-  pe
+  s
 
 ## Table of Contents (Optional)
-
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -12,32 +11,33 @@
 - [Tests](#tests)
 - [License](#license)
 - [Badge](#badge)
+- [Questions](#questions)
 
 ## Installation
-pe
-
-
+s
 
 ## Usage
-pe
-
+s
 
 ## How to Contribute
-pe
-
+s
 
 ## Tests
-pe
+s
 
 ## License
 
 
-     GPL
+     MIT
     
-[license link](https://choosealicense.com/licenses/gpl-3.0/)
-
+[license link](https://choosealicense.com/licenses/mit/)
 
 ## Badge
 
-![unlicense](https://img.shields.io/eclipse-marketplace/l/notepad4e)
+![MIT](https://img.shields.io/bower/l/bootstrap?style=for-the-badge)
 
+## Questions
+click the link below to access my GitHub profile:
+UserName:   [dhclarke99](https://github.com/dhclarke99) 
+
+Email me at dhclarke99@gmail.com with any additional questions!

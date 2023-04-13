@@ -44,6 +44,12 @@ function renderLicenseSection(license) {
     `;
 }
 
+function renderGitHubSection(gitProf) {
+    const link = "https://github.com/" + gitProf
+    return `  [${gitProf}](${link}) `;
+}
+
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -53,26 +59,22 @@ function generateMarkdown(data) {
 
 ## Table of Contents (Optional)
 
-
 - [Installation](#installation)
 - [Usage](#usage)
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
 - [License](#license)
 - [Badge](#badge)
+- [Questions](#questions)
 
 ## Installation
 ${data.installation}
 
-
-
 ## Usage
 ${data.usageInfo}
 
-
 ## How to Contribute
 ${data.contribution}
-
 
 ## Tests
 ${data.testing}
@@ -82,11 +84,16 @@ ${data.testing}
 ${renderLicenseSection(data.license)}
 ${renderLicenseLink(data.license)}
 
-
 ## Badge
 
 ${renderLicenseBadge(data.license)}
 
+## Questions
+Click the link below to access my GitHub profile:
+
+UserName: ${renderGitHubSection(data.gitHub)}
+
+Email me at ${data.email} with any additional questions!
 `;
 }
 
@@ -97,4 +104,5 @@ module.exports = {
     renderLicenseBadge,
     renderLicenseLink,
     renderLicenseSection,
+    renderGitHubSection
 }
